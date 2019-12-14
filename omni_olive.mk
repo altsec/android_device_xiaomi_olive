@@ -25,3 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES := ro.treble.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.build.version.security_patch=2099-12-31 \
 	ro.vendor.build.security_patch=2099-12-31
+
+ # Verity
+PRODUCT_SUPPORTS_BOOT_SIGNER := true
+PRODUCT_SUPPORTS_VERITY := true
+PRODUCT_SUPPORTS_VERITY_FEC := true
+PRODUCT_VERITY_SIGNING_KEY := build/target/product/security/verity
